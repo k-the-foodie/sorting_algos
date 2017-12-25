@@ -2,6 +2,7 @@ import unittest
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.realpath(__file__))[:-5] + 'sorting_algos')
+print(os.path.dirname(os.path.realpath(__file__))[:-5] + 'sorting_algos')
 # What is above line doing ?
 # To import files from other directories, we need to add path to that file in sys.path
 # os.path.dirname(os.path.realpath(__file__)) gives full path to current directory which ends in master_folder\tests.
