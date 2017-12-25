@@ -1,4 +1,12 @@
 import unittest
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.realpath(__file__))[:-5] + 'sorting_algos')
+# What is above line doing ?
+# To import files from other directories, we need to add path to that file in sys.path
+# os.path.dirname(os.path.realpath(__file__)) gives full path to current directory which ends in master_folder\tests.
+# our required file is in folder named 'sorting_algos', and path is master_folder\sorting_algos.
+# Hence we are dropping last 5 characters in generated path (i.e., 'tests') and adding 'sorting_algos' to path.
 from sorting_algos import *
 
 class test_valid_int_array(unittest.TestCase):
