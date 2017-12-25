@@ -325,7 +325,6 @@ def radix_sort(array):
             Returns : integer between 0 to 9 (both included)
             
             """
-            
             try:
                 return int(str(number)[-1-digit_place])
             except IndexError:
