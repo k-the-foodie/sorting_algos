@@ -25,7 +25,7 @@ TRAVIS_CONFIG_FILE = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), '.travis.yml')
 
 
-def load_key(pubkey):
+        def load_key(pubkey):
     """Load public RSA key.
 
     Work around keys with incorrect header/footer format.
